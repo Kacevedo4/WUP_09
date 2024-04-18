@@ -69,8 +69,37 @@ which.max(summary.out$adjr2)
 
 The best 2 parameters to predict weight its height and width.
 
+```{r}
+summary.out$which[3,]
+```
+
+
+```{r}
+best2.model <- lm(Weight~Height+Width,data=perchFish)
+summary(best2.model)
+```
+
+
+```{r}
+anova(perchModel,best2.model)
+```
+
+##Pike
+
+```{r}
+pikeFish <- filter(fishdata, Species=="Pike")
+pikeFish <- pikeFish %>%
+  select(-Species)
+```
+
 
 ### Best Models
+
+```{r}
+pikeModel <- lm(Weight~., data=pikeFish)
+summary(pikeModel)
+```
+
 
 ### Best Two regressor model
 
