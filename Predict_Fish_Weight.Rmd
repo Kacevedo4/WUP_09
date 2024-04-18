@@ -25,7 +25,7 @@ fishdata <- read.csv("Fish.csv")
 unique(fishdata$Species)
 ```
 
-## Perch
+##Perch
 
 ```{r}
 perchFish <- filter(fishdata, Species=="Perch")
