@@ -41,6 +41,7 @@ The best models for all three species
 ```{r}
 perchModel <- lm(Weight~., data=perchFish)
 summary(perchModel)
+
 ```
 
 
