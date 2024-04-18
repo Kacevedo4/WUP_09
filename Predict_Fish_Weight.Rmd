@@ -32,9 +32,9 @@ perchFish <- filter(fishdata, Species=="Perch")
 perchFish <- perchFish %>%
   select(-Species)
 ```
-### Best Models
+###Best Models
 
-The best models for all three species.  
+The best models for all three species
 
 
 ### Best Two regressor model
